@@ -25,4 +25,16 @@ class MainActivateButton: UIButton {
         set { layer.borderColor = newValue.cgColor }
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.backgroundColor = .systemBlue
+        self.setTitleColor(.white, for: .normal)
+        self.cornerRadius = 10
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
